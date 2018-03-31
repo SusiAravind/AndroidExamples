@@ -17,15 +17,20 @@
         <activity android:name=".EmailSMSPhone.ESPActivity" />
         <activity android:name=".SqliteExample.SqliteMain" />
         <activity android:name=".SqliteExample.AddData" />
-        <activity android:name=".SharedPref.SharedPrefActivity"></activity>
+        <activity android:name=".SharedPref.SharedPrefActivity"/>
         <activity
             android:name=".NavExample.NavigationActivity"
             android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".TabExample.TabbedActivity"
+            android:label="@string/title_activity_tabbed"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+
         <activity
-            android:name=".TabExample.TabbedActivity"
+            android:name=".Toast_SnackBar.TSActivity"
             android:label="@string/title_activity_tabbed"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
