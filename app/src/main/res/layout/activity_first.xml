@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aravind.androidexamples.IntentExample.FirstActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/next_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Next Activity"
+            android:onClick="nextActivity"
+            android:textColor="@color/white" />
+
+        <Button
+            android:onClick="nextActivityWithData"
+            android:layout_marginTop="10dp"
+            android:id="@+id/next_activity_with_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Next Activity with Data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:onClick="intentWeb"
+            android:layout_marginTop="10dp"
+            android:id="@+id/intent_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="intent to Web browser"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/action_send"
+            android:onClick="intentSEND"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Intent data to mail app"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/action_insert"
+            android:onClick="intentInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Insert data to calendar"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/openApp"
+            android:onClick="openApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Open WhatsApp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
