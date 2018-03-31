@@ -29,17 +29,18 @@
         <activity
             android:name=".Toast_SnackBar.TSActivity"
             android:label="@string/title_activity_tabbed"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".IntentExample.FirstActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".IntentExample.FirstActivity">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
+        <activity android:name=".IntentExample.SecondActivity" />
+        <activity android:name=".ListViewExample.ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name=".IntentExample.SecondActivity"></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
