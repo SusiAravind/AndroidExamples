@@ -65,22 +65,20 @@ public class FirstActivity extends AppCompatActivity {
         startActivity(calendarIntent);
     }
 
+    public void openApp(View view) {
 
-    public void openApplication(Context context, String packageN) {
-        Intent i = context.getPackageManager().getLaunchIntentForPackage(packageN);
+        Intent i = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
         if (i == null) {
             i.addCategory(Intent.CATEGORY_LAUNCHER);
-            context.startActivity(i);
+            startActivity(i);
         } else {
             try {
-                context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + packageN)));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.whatsapp")));
             } catch (android.content.ActivityNotFoundException anfe) {
-                context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + packageN)));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + "com.whatsapp")));
             }
         }
-    }
 
-    public void openApp(View view) {
-        openApplication(getApplicationContext(), "com.whatsapp");
+
     }
 }
