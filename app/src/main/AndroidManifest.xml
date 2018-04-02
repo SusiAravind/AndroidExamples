@@ -30,12 +30,12 @@
             android:name=".Toast_SnackBar.TSActivity"
             android:label="@string/title_activity_tabbed"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".IntentExample.FirstActivity"></activity>
+        <activity android:name=".IntentExample.FirstActivity" />
         <activity android:name=".IntentExample.SecondActivity" />
-        <activity android:name=".ListViewExample.ListActivity">
-
-        </activity>
+        <activity android:name=".ListViewExample.ListActivity"></activity>
         <activity android:name=".RecyclerViewExample.RecyclerActivity">
+        </activity>
+        <activity android:name=".TexttoSpeech.TextToSpeechActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
